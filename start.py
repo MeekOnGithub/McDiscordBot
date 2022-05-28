@@ -76,7 +76,7 @@ if yes == "y":
   os.system("pip install -r requirement.txt")
   os.system("npm install mineflayer")
   os.system("cd Files")
-  os.system("python discordbot.py")
+  os.system("python main.py")
 elif yes=="n":
   print("Veuillez fermez le programme !")
 else:
