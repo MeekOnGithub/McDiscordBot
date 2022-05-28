@@ -29,11 +29,15 @@ Attendre que les modules s'installes
 Pour bot.py
 
 ![image](https://user-images.githubusercontent.com/89902968/170827380-e432698f-fc3b-4da8-bb44-aadc6f5525d9.png)
+  
 Host = l'ip que le bot devras rejoindre
+  
 Port = Le port de l'ip
+  
 Pseudo = Le pseudo
 
 ![image](https://user-images.githubusercontent.com/89902968/170827454-245324da-d1a6-4ffe-bdfb-5a017c68fa77.png)
+  
 Token = le token de votre bot
 
 **⛔ Votre serveur doit accepté les cracks**
@@ -41,6 +45,7 @@ Token = le token de votre bot
 Pour main.py
 
 ![image](https://user-images.githubusercontent.com/89902968/170827454-245324da-d1a6-4ffe-bdfb-5a017c68fa77.png)
+  
 Token = le token de votre bot
 
 
