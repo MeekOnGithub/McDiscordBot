@@ -13,25 +13,6 @@ pathfinder = require('mineflayer-pathfinder')
 intents = Intents.default()
 intents.members = True
 
-sys.stdout.write('\rloading |')
-time.sleep(0.1)
-sys.stdout.write('\rloading /')
-time.sleep(0.1)
-sys.stdout.write('\rloading -')
-time.sleep(0.1)
-sys.stdout.write('\rloading \\')
-time.sleep(0.1)
-sys.stdout.write('\rloading |')
-time.sleep(0.1)
-sys.stdout.write('\rloading /')
-time.sleep(0.1)
-sys.stdout.write('\rloading -')
-time.sleep(0.1)
-sys.stdout.write('\rloading \\')
-time.sleep(0.1)
-sys.stdout.write('\rDone!     ')
-
-
 
 bot = commands.Bot(command_prefix = "+", description = "Have a nice day ;D", intents=intents)
 slash = SlashCommand(bot, sync_commands=True)
