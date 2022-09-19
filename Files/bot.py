@@ -1,4 +1,9 @@
 print("Lancement...")
+ip = input("Ip : ")
+port = input("Port (Que si votre port n'est pas 25565) : ")
+if port == None:
+  port == "25565"
+pseudo = input("Pseudo du bot : ")
 
 import discord
 from discord.ext import commands
@@ -12,10 +17,10 @@ pathfinder = require('mineflayer-pathfinder')
 
 client = commands.Bot(command_prefix = "+", description = "Have a nice day ;D")
 slash = SlashCommand(client, sync_commands=True)
-host = 'ip'
-port = 'port'
+host = ip
+port = port
 RANGE_GOAL = 1
-BOT_USERNAME = 'pseudo'
+BOT_USERNAME = pseudo
 
 bot = mineflayer.createBot({
   'host': host,
