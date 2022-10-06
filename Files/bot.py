@@ -1,21 +1,17 @@
-print("Lancement...")
-ip = input("Ip : ")
-port = input("Port (Que si votre port n'est pas 25565) : ")
-if port == None:
-  port == "25565"
-pseudo = input("Pseudo du bot : ")
 
 import discord
+from McDiscordBot.config import token, usernamebot, prefix, joinchannel
 from discord.ext import commands
 from discord_slash import ButtonStyle, SlashCommand
 from discord_slash.utils.manage_components import *
+import sys
 from javascript import require, On
 import os
 mineflayer = require('mineflayer')
 pathfinder = require('mineflayer-pathfinder')
 
 
-client = commands.Bot(command_prefix = "+", description = "Have a nice day ;D")
+client = commands.Bot(command_prefix = prefix, description = "Have a nice day ;D")
 slash = SlashCommand(client, sync_commands=True)
 host = ip
 port = port
@@ -31,9 +27,13 @@ bot = mineflayer.createBot({
 bot.loadPlugin(pathfinder.pathfinder)
 print("Loading /")
 
+print("Lancement...")
+if port == None:
+  port == "25565"
 
 @client.event
 async def on_ready():
+  os.system("cls")
   print("Ready !")
 
 @On(bot, 'spawn')
@@ -70,13 +70,13 @@ async def stop(ctx):
   if button_ctx.custom_id == "oui":
     await fait_choix.delete()
     print("Bot éteint...")
-    os.system("taskkill /f /im cmd.exe /t")
+    sys.exit()
     message = await ctx.send("Bot éteint !")
 
   else:
     await fait_choix.delete()
 
-client.run("token")
+client.run(token)
 
 
 
