@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+from McDiscordBot.config import token, prefix, joinchannel
 from discord_slash import ButtonStyle, SlashCommand
 from discord_slash.utils.manage_components import *
 from javascript import require, On
@@ -14,20 +15,17 @@ intents = Intents.default()
 intents.members = True
 
 
-bot = commands.Bot(command_prefix = "+", description = "Have a nice day ;D", intents=intents)
+bot = commands.Bot(command_prefix = prefix, description = "Have a nice day ;D", intents=intents)
 slash = SlashCommand(bot, sync_commands=True)
 
 @bot.event
 async def on_ready():
 	os.system("cls")
-	print("▒█▀▄▀█ █▀▀ █▀▀ █ █ █ █▀▀  █▀▀▄ █▀▀█ ▀▀█▀▀ ")
-	print("▒█▒█▒█ █▀▀ █▀▀ █▀▄ ░ ▀▀█  █▀▀▄ █  █   █  ")
-	print("▒█░░▒█ ▀▀▀ ▀▀▀ ▀ ▀ ░ ▀▀▀  ▀▀▀  ▀▀▀▀   ▀ ")
 
 @bot.event
 async def on_member_join(member):
-	channel = bot.get_channel(977827897802911776)
-	embed=discord.Embed(title=f"{message.author.mention}, bienvenue sur Meek's Creation!" ,color=0xaf2323)
+	channel = bot.get_channel(joinchannel)
+	embed=discord.Embed(title=f"{message.author.mention}, bienvenue sur le serveur" ,color=0xaf2323)
 	await channel.send(embed=embed)
 	print(f"{member.name}, a rejoin le serveur !")
 	member = member.message.author
@@ -75,4 +73,4 @@ async def start(ctx):
 
 		
 
-bot.run("token")
+bot.run(token)
