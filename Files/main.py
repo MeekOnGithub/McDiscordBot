@@ -1,10 +1,7 @@
-import discord
-from discord.ext import commands
+from nextcord import Intents
+from nextcord.ext import commands, menus, tasks
 from McDiscordclient.config import token, prefix, joinchannel
-from discord_slash import ButtonStyle, SlashCommand
-from discord_slash.utils.manage_components import *
 from javascript import require, On
-from discord import Intents
 import os
 import time
 import sys
