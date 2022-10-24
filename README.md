@@ -17,37 +17,22 @@ Attendre que les modules s'installes
 
 # Configuration 
 
-`Cliquer sur le dossier :`ㅤㅤㅤㅤ
-ㅤㅤㅤㅤㅤㅤㅤ
-![image](https://user-images.githubusercontent.com/89902968/170826826-cdec74b8-a0fb-4dd2-b283-a46bae9e1eb6.png)
-
-`Et lancer un des 2 fichiers avec un editeur de text (Sublime Text, Visual Code, ...)`
-
-![image](https://user-images.githubusercontent.com/89902968/170827003-ae267011-fd2b-42c7-95a0-970246936831.png)
+`Modifie le fichier config.py a ton gout`
 
 
-Pour bot.py
-
-![image](https://user-images.githubusercontent.com/89902968/170827380-e432698f-fc3b-4da8-bb44-aadc6f5525d9.png)
-  
-Host = l'ip que le bot devras rejoindre
-  
-Port = Le port de l'ip
-  
-Pseudo = Le pseudo
-
-![image](https://user-images.githubusercontent.com/89902968/170827454-245324da-d1a6-4ffe-bdfb-5a017c68fa77.png)
-  
-Token = le token de votre bot
 
 **⛔ Votre serveur doit accepté les cracks**
 
-Pour main.py
 
-![image](https://user-images.githubusercontent.com/89902968/170827454-245324da-d1a6-4ffe-bdfb-5a017c68fa77.png)
-  
-Token = le token de votre bot
+# Mise à jour 
 
+```
+- Suppresion du faux loading
+- Correction de certaines fautes d'orthographes
+- Ajout d'un fichier config.py pour simplifier la configuration du bot
+- Combinaison du fichier bot.py et main.py
+- Utilisation de nextcord au lieu de discord_slash et discord.py (1.7.3)
+```
 
-Aide dans : https://discord.gg/D4RCqqEG
+Aucun crédit a était mis le bot pour éviter de faire de la pub sauvage ^^
 
