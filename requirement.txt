@@ -1,6 +1,4 @@
-discord
-discord_slash
+nextcord
 javascript
 time
 sys
-discord_slash.utils.manage_components
