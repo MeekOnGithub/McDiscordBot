@@ -21,21 +21,6 @@ slash = SlashCommand(client, sync_commands=True)
 async def on_ready():
 	os.system("cls")
 
-@client.event
-async def on_member_join(member):
-	channel = client.get_channel(joinchannel)
-	embed=discord.Embed(title=f"{message.author.mention}, bienvenue sur le serveur" ,color=0xaf2323)
-	await channel.send(embed=embed)
-	print(f"{member.name}, a rejoin le serveur !")
-	member = member.message.author
-	role = get(member.server.roles, name="MEMBRE")
-	await client.add_roles(member, role)
-
-@client.event
-async def on_member_leave(member):
-	embed=discord.Embed(title=f"{message.author.mention}, est partie" ,color=0xaf2323)
-	await channel.send(embed=embed)
-	print(f"{member.name}, a quitté le serveur !")
 
 class embed(nextcord.ui.Modal):
 	def __init__(self):
