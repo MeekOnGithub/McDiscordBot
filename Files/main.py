@@ -22,7 +22,7 @@ async def on_ready():
 	os.system("cls")
 
 
-class embed(nextcord.ui.Modal):
+class botconnection(nextcord.ui.Modal):
 	def __init__(self):
 		super().__init__("Création de l'embed")  
 
