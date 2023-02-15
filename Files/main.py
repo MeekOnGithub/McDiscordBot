@@ -77,7 +77,7 @@ class Start(nextcord.ui.View):
 @client.slash_command(
 	name="start",
 	description="Permet démmarrer le client")
-async def stop(interaction):
+async def startthebot(interaction):
 	try:
 		view = Start()
 		embed = nextcord.Embed(title="Êtes-vous sur de vouloir démarrer le client?")
