@@ -1,0 +1,18 @@
+{
+    "token": "token",
+    "prefix": "!",
+    "owner": "owner id",
+    "minecraft": {
+        "server": {
+            "ip": "ip",
+            "port": 25565
+        },
+        "username": "Nom_Du_Bot",
+        "crack": true,
+        "auth": {
+            "email": "email",
+            "password": "password",
+            "service": "mojang OU microsoft"
+        }
+    }
+}
